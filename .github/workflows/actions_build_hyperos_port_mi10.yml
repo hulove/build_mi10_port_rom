@@ -62,7 +62,6 @@ jobs:
           git clone https://github.com/toraidl/hyperos_port.git -b ext
           cd hyperos_port
           mkdir tmp
-          rclone sync -P onedrive:/ROM_FILES/ tmp/
           mkdir -p devices/umi devices/cmi
           cp -rfv tmp/BT*.zip devices/umi
           cp -rfv tmp/BT*.zip devices/cmi
